@@ -1,0 +1,57 @@
+[
+  {
+    "id": "start",
+    "speaker": "雨姐",
+    "text": "早上好呀！你终于来了。今天的天气很好，适合一起散步。",
+    "choices": [
+      { "text": "当然，陪你一起走走吧。", "next": "choice_a", "affection": 2 },
+      { "text": "我只是顺路经过，没想到会遇见你。", "next": "choice_b", "affection": 0 }
+    ]
+  },
+  {
+    "id": "choice_a",
+    "speaker": "雨姐",
+    "text": "嘿嘿，那就走吧。先去买一份点心，再在小巷那边坐一会儿。",
+    "next": "choice_c"
+  },
+  {
+    "id": "choice_b",
+    "speaker": "雨姐",
+    "text": "这样说也不错……不过你看起来，还是很想留下来啊。",
+    "next": "choice_c"
+  },
+  {
+    "id": "choice_c",
+    "speaker": "雨姐",
+    "text": "你知道吗？我最近都在想，生活里最重要的，不是热闹，而是有人愿意陪你。",
+    "choices": [
+      { "text": "那我就陪你一辈子。", "next": "good_end", "affection": 3 },
+      { "text": "我也想陪你，但今天先慢慢来。", "next": "normal_end", "affection": 1 },
+      { "text": "我只是来看看，没想太多。", "next": "quiet_end", "affection": -1 }
+    ]
+  },
+  {
+    "id": "good_end",
+    "speaker": "雨姐",
+    "text": "……这样啊。那我就把这句话记在心里了。今天真的很开心，谢谢你。",
+    "next": "ending"
+  },
+  {
+    "id": "normal_end",
+    "speaker": "雨姐",
+    "text": "慢慢来也好。只要你愿意停下来陪我，我就已经很满足了。",
+    "next": "ending"
+  },
+  {
+    "id": "quiet_end",
+    "speaker": "雨姐",
+    "text": "嗯……这样也没关系。我会一直在这里等你，等你想起来，我也想和你一起看看这个世界。",
+    "next": "ending"
+  },
+  {
+    "id": "ending",
+    "speaker": "系统",
+    "text": "第一章结束。\n如果你愿意，可以保存进度，或者重新开始体验另一条路线。",
+    "next": null
+  }
+]

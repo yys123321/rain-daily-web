@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>雨姐的日常</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <div id="title-screen" class="screen active">
+        <div class="title-panel">
+          <p class="eyebrow">温馨日常视觉小说</p>
+          <h1>雨姐的日常</h1>
+          <h2>第一章：清晨的约定</h2>
+          <div class="button-row">
+            <button id="start-btn" class="primary-btn">开始游戏</button>
+            <button id="continue-btn" class="secondary-btn">继续游戏</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="story-screen" class="screen">
+        <div class="scene">
+          <div class="character-panel">
+            <div id="portrait" class="portrait" aria-label="角色立绘">
+              <div class="portrait-inner">
+                <div class="hair"></div>
+                <div class="face"></div>
+                <div class="eye eye-left"></div>
+                <div class="eye eye-right"></div>
+                <div class="smile"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dialogue-panel">
+            <div class="header-row">
+              <div id="speaker" class="speaker-name">雨姐</div>
+              <div id="affection" class="affection">好感度：0</div>
+            </div>
+
+            <div id="dialogue" class="dialogue-text">
+              早上好呀，今天也来陪我吧。
+            </div>
+
+            <div id="choices" class="choices"></div>
+
+            <div class="footer-row">
+              <button id="next-btn" class="primary-btn">继续</button>
+              <button id="save-btn" class="secondary-btn">保存</button>
+              <button id="load-btn" class="secondary-btn">读取</button>
+              <button id="audio-btn" class="secondary-btn">音乐：开</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
